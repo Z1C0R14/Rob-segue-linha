@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Parallax - Robótica</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+        transition: top 0.5s ease, opacity 0.5s ease;
+    }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 25px;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            color: #acacac;
+        }
+
+        .parallax {
+            background-image: url('https://img.freepik.com/fotos-gratis/fundo-3d-da-mao-do-robo-vista-lateral-da-tecnologia-ai_53876-129789.jpg?ga=GA1.1.370910436.1731361391&semt=ais_hybrid');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(213, 227, 228, 0.8);
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            background-color: #1a1a1a;
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 15%;
+            height: auto;
+            border-radius: 10px;
+            max-height: 210px;
+        }
+
+        .image-container1 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container1 img {
+            width: 10%;
+            height: auto;
+            border-radius: 10px;
+            max-height: 175px;
+        }
+
+        .parallax1, .parallax2 {
+            height: 75vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax1 {
+            background-image: url('https://img.freepik.com/fotos-gratis/fundo-de-dedo-da-mao-do-robo-tecnologia-ai_53876-129766.jpg?ga=GA1.1.370910436.1731361391&semt=ais_hybrid');
+        }
+
+        .parallax2 {
+            background-image: url('https://s2-techtudo.glbimg.com/A5qNrSc0o_txJEtu96pGUIA6234=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/d/N/PWVmpvRGikHOEVbYmoug/elon-musk-robo-humanoide.png');
+        }
+
+        .github-section {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.5rem;
+        }
+
+        .github-section a { 
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .github-section a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding-top: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Nossos Serviços</a>
+            <a href="#github">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="parallax">Bem-vindo à página do nosso projeto</div>
+    <section id="sobre" class="content">
+        <h2>Sobre Nós</h2>
+        <p>Robocop nasceu como o propósito de desenvolver um robô segue linha, utilizando do máximo de produtos recicláveis possíveis e Arduino.
+            <br> A ideia surgiu como um trabalho acadêmico, onde o objetivo final será organizar uma competição entre os projetos desenvolvidos.
+           <br> Nossa equipe é formada por 6 membros: Alex, Bruno, Diego, Fabrício, Isac e Reinaldo. Todos com funções individuais, como a compra e coletas dos materiais, a programação do código para o Arduino, construção da base e junção dos componentes do protótipo, documentação do progresso por trás do projeto e a criação e alterações do portfólio do projeto no GitHub.
+            Com planejamento e uma equipe bem estruturada, organizada e unida, planejamos criar um robô que, não só competirá na atividade proposta, mas sim irá vencê-la.</p>
+        <div class="image-container1">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354219641857249321/WhatsApp_Image_2025-03-25_at_19.22.55.jpeg?ex=67e47ed2&is=67e32d52&hm=a291a0b881cc8794ab0d4498fafd5b7d45befd6b16647def7af22b0a50882053&" alt="alequis">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354219641521573888/WhatsApp_Image_2025-03-25_at_19.23.49.jpeg?ex=67e47ed2&is=67e32d52&hm=a2051f45cb79ca39370073adf20450a9c939a78b6cb0435112c913680c8f639f&" alt="L">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354221041295163533/02ec80cd-f410-4b5b-b44c-41668edd81f3.webp?ex=67e48020&is=67e32ea0&hm=fd7daff449d31779430403ba1e063a1397505116cf5e34215230c779a1dead39&" alt="Burro">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354221544729215029/WhatsApp_Image_2025-03-25_at_19.32.31.jpeg?ex=67e48098&is=67e32f18&hm=90e8f2fd47bc5e3f1b456a1ad3c321425b0436ea0a702de095600562b95e356c&" alt="ReiEterno">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354222700960288870/WhatsApp_Image_2025-03-25_at_19.34.41.jpeg?ex=67e481ac&is=67e3302c&hm=9bb00ab96c5f846cc1cc9ff3ae29e2026939ff728c2cd68db9db3eab97d87ed2&" alt="Zé">
+        </div>
+    </section>
+    
+    <div class="parallax1"></div>
+    
+    <section id="servicos" class="content">
+        <h2>Nossos Serviços</h2>
+        <p>Robocop nasceu como o propósito de desenvolver um robô segue linha, utilizando do máximo de produtos recicláveis possíveis e Arduino.
+            <br> A ideia surgiu como um trabalho acadêmico, onde o objetivo final será organizar uma competição entre os projetos desenvolvidos.
+           <br> Nossa equipe é formada por 6 membros: Alex, Bruno, Diego, Fabrício, Isac e Reinaldo. Todos com funções individuais, como a compra e coletas dos materiais, a programação do código para o Arduino, construção da base e junção dos componentes do protótipo, documentação do progresso por trás do projeto e a criação e alterações do portfólio do projeto no GitHub.
+            Com planejamento e uma equipe bem estruturada, organizada e unida, planejamos criar um robô que, não só competirá na atividade proposta, mas sim irá vencê-la.</p>
+        <div class="image-container">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354215188118900928/WhatsApp_Image_2025-03-25_at_19.03.06-removebg-preview.png?ex=67e47aac&is=67e3292c&hm=b15982a406fc11f339e8a7d3a16eb86529488a8d2e3ce9784e779864d4f5c308&" alt="Imagem 5">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354215188420759752/WhatsApp_Image_2025-03-24_at_19.40.45-removebg-preview.png?ex=67e47aad&is=67e3292d&hm=c5c621127b4d7b10bca167a28dad8552ed47f0f70f0c6f64f84a3afa10da789c&" alt="Imagem 4">
+            <img src="https://cdn.discordapp.com/attachments/816751889071865918/1354215187783221418/WhatsApp_Image_2025-03-25_at_19.03.071.jpeg?ex=67e47aac&is=67e3292c&hm=63995df86afb2a9681aadc7fb9e2683b1292faa6b69aee7247695e971da89960&" alt="Imagem 6">
+        </div>
+    </section>
+    
+    <div class="parallax2"></div>
+    
+    <section id="github" class="github-section">
+        <p>Confira nosso projeto no GitHub:</p>
+        <a href="https://github.com/Z1C0R14/Rob-segue-linha" target="_blank">GitHub</a>
+    </section>
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function() {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+            if (scrollTop > lastScrollTop) {
+                // Rolando para baixo, esconde o header
+                header.style.top = "-100px";
+            } else {
+                // Rolando para cima, mostra o header
+                header.style.top = "0";
+            }
+    
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    
+</body>
+</html>
